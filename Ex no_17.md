@@ -5,8 +5,8 @@ To write a C Program to compare two strings without using strcmp().
 
 ## Algorithm
 1. Start. 
-2. Define a variables a,b,c. 
-3. Write program to find the smallest among the three numbers. 
+2. Define a variables. 
+3. Write program to compare two strings using nested for loop and if statement. 
 4. Read the value using scanf. 
 5. Ask the user to make an input. 
 6. Print out the answer. 
@@ -14,28 +14,29 @@ To write a C Program to compare two strings without using strcmp().
    
 ## Program:
 ```
-#include<stdio.h> 
-int main() 
-{ 
-int a,b,c;  
-scanf("%d%d%d",&a,&b,&c);  
-if(a<b && a<c) 
-{ 
-printf("%d is the smallest number.",a); 
-} 
-else if(b<a && b<c) 
-{ 
-printf("%d is the smallest number.",b); 
-} 
-else 
-{ 
-printf("%d is the smallest number.",c); 
-} 
+#include <stdio.h> 
+int main() { 
+    char str1[100], str2[100]; 
+    int i = 0, flag = 0; 
+    scanf("%s", str1); 
+    scanf("%s", str2); 
+    while (str1[i] != '\0' || str2[i] != '\0') { 
+        if (str1[i] != str2[i]) { 
+            flag = 1; 
+            break; 
+        } 
+        i++;    }    
+ if (flag == 0)         
+printf("Strings are equal.\n"); 
+ else 
+        printf("Strings are not equal.\n"); 
+    return 0; 
 }
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/d9ea96d0-80eb-4e27-95ae-06b6dc537d57)
+![image](https://github.com/user-attachments/assets/3ba6cae8-8f50-471e-995c-27940847de69)
+
 
 
 

@@ -5,9 +5,13 @@ To write a C program to perform basic left and right shift operations on a given
 
 ## Algorithm
 Start the program.
+
 1.Declare an integer variable and two more for storing left and right shift results.
+
 2.Read an integer and number of shift positions from the user.
+
 3.Perform left shift (num << n) and right shift (num >> n) operations.
+
 4.Display the original, left shifted, and right shifted values.
 
 ## Program:
